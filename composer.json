@@ -28,7 +28,7 @@
         "illuminate/contracts": "^5.2|^6|^7|^8",
         "illuminate/http": "^5.2|^6|^7|^8",
         "illuminate/support": "^5.2|^6|^7|^8",
-        "maximumtest/jwt": "3.3.4",
+        "maximumtest/jwt": "1.0.0",
         "namshi/jose": "^7.0",
         "nesbot/carbon": "^1.0|^2.0"
     },
@@ -76,7 +76,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/maximumtest/jwt"
+            "url": "https://github.com/maximumtest/copy-jwt"
         }
     ],
     "prefer-stable": true,
