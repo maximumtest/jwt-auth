@@ -13,9 +13,9 @@ namespace Tymon\JWTAuth\Test\Providers\JWT;
 
 use Exception;
 use InvalidArgumentException;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\Parser;
-use Lcobucci\JWT\Signer\Key;
+use Maximumtest\JWT\Builder;
+use Maximumtest\JWT\Parser;
+use Maximumtest\JWT\Signer\Key;
 use Mockery;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;

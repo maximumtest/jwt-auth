@@ -13,20 +13,20 @@ namespace Tymon\JWTAuth\Providers\JWT;
 
 use Exception;
 use Illuminate\Support\Collection;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\Parser;
-use Lcobucci\JWT\Signer\Ecdsa;
-use Lcobucci\JWT\Signer\Ecdsa\Sha256 as ES256;
-use Lcobucci\JWT\Signer\Ecdsa\Sha384 as ES384;
-use Lcobucci\JWT\Signer\Ecdsa\Sha512 as ES512;
-use Lcobucci\JWT\Signer\Hmac\Sha256 as HS256;
-use Lcobucci\JWT\Signer\Hmac\Sha384 as HS384;
-use Lcobucci\JWT\Signer\Hmac\Sha512 as HS512;
-use Lcobucci\JWT\Signer\Keychain;
-use Lcobucci\JWT\Signer\Rsa;
-use Lcobucci\JWT\Signer\Rsa\Sha256 as RS256;
-use Lcobucci\JWT\Signer\Rsa\Sha384 as RS384;
-use Lcobucci\JWT\Signer\Rsa\Sha512 as RS512;
+use Maximumtest\JWT\Builder;
+use Maximumtest\JWT\Parser;
+use Maximumtest\JWT\Signer\Ecdsa;
+use Maximumtest\JWT\Signer\Ecdsa\Sha256 as ES256;
+use Maximumtest\JWT\Signer\Ecdsa\Sha384 as ES384;
+use Maximumtest\JWT\Signer\Ecdsa\Sha512 as ES512;
+use Maximumtest\JWT\Signer\Hmac\Sha256 as HS256;
+use Maximumtest\JWT\Signer\Hmac\Sha384 as HS384;
+use Maximumtest\JWT\Signer\Hmac\Sha512 as HS512;
+use Maximumtest\JWT\Signer\Keychain;
+use Maximumtest\JWT\Signer\Rsa;
+use Maximumtest\JWT\Signer\Rsa\Sha256 as RS256;
+use Maximumtest\JWT\Signer\Rsa\Sha384 as RS384;
+use Maximumtest\JWT\Signer\Rsa\Sha512 as RS512;
 use ReflectionClass;
 use Tymon\JWTAuth\Contracts\Providers\JWT;
 use Tymon\JWTAuth\Exceptions\JWTException;
@@ -37,22 +37,22 @@ class Lcobucci extends Provider implements JWT
     /**
      * The Builder instance.
      *
-     * @var \Lcobucci\JWT\Builder
+     * @var \Maximumtest\JWT\Builder
      */
     protected $builder;
 
     /**
      * The Parser instance.
      *
-     * @var \Lcobucci\JWT\Parser
+     * @var \Maximumtest\JWT\Parser
      */
     protected $parser;
 
     /**
      * Create the Lcobucci provider.
      *
-     * @param  \Lcobucci\JWT\Builder  $builder
-     * @param  \Lcobucci\JWT\Parser  $parser
+     * @param  \Maximumtest\JWT\Builder  $builder
+     * @param  \Maximumtest\JWT\Parser  $parser
      * @param  string  $secret
      * @param  string  $algo
      * @param  array  $keys
@@ -147,7 +147,7 @@ class Lcobucci extends Provider implements JWT
      *
      * @throws \Tymon\JWTAuth\Exceptions\JWTException
      *
-     * @return \Lcobucci\JWT\Signer
+     * @return \Maximumtest\JWT\Signer
      */
     protected function getSigner()
     {
